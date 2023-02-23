@@ -1,0 +1,12 @@
+html {
+    box-sizing: border-box;
+    /* szerokość i wysokość zawsze będą obejmowały padding i border */
+}
+
+*,
+::after,
+::before {
+    box-sizing: inherit;
+    /* szerokość i wysokość zawsze będą obejmowały padding i border */
+}
+
