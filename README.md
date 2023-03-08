@@ -6,3 +6,13 @@ https://rafalzdrowok.github.io/Tasks-list---application/
 The purpose of creating the currency-converter was:
 - implementation of the Grid property in CSS
 - implementation of the Media queries property in CSS
+## Technologies:
+- HTML✔
+- CSS✔
+- JavaScript✔
+- ES6+✔
+- BEM✔
+- GIT✔
+- Flex✔
+- Grid✔
+- Media queries✔
