@@ -1,6 +1,16 @@
 {
     const tasks = [];
 
+    const bindRemoveEvents = () => {
+        const removeButtons = document.querySelectorAll(".js-remove");
+
+        removeButtons.forEach((removeButton, taskIndex) => {
+            removeButton.addEventListener("click", () => {
+                removeTask(taskIndex);
+            });
+        });
+    };
+
     const render = () => {
         let taskListHTMLContent = "";
 
@@ -23,6 +33,11 @@
         </li>
         `;
         } 
+
+        document.querySelector(".js-tasks").innerHTML = taskListHTMLContent;
+
+        bindRemoveEvents();
+
     };
 
     const onFormSubmit = (event) => {
