@@ -11,6 +11,16 @@
         });
     };
 
+    const bindToggleDoneEvents = () => {
+        const toggleDoneButtons = document.querySelectorAll(".js-toogleDone");
+
+        toggleDoneButtons.forEach((toggleDoneButton, taskIndex) => {
+            toggleDoneButton.addEventListener("click", () => {
+                toggleTaskDone(taskIndex);
+            });
+        });
+    };
+
     const render = () => {
         let taskListHTMLContent = "";
 
@@ -37,7 +47,7 @@
         document.querySelector(".js-tasks").innerHTML = taskListHTMLContent;
 
         bindRemoveEvents();
-
+        bindToggleDoneEvents();
     };
 
     const onFormSubmit = (event) => {
