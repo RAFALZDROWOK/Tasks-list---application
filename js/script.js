@@ -1,6 +1,11 @@
 {
     const tasks = [];
 
+    const addNewTask = (newTaskContent) => {
+        tasks.push({content:newTaskContent});
+        render();
+    }
+
     const bindRemoveEvents = () => {
         const removeButtons = document.querySelectorAll(".js-remove");
 
