@@ -1,6 +1,11 @@
 {
     const tasks = [];
 
+    const toggleTaskDone = (taskIndex) => {
+        tasks[taskIndex].done = !tasks[taskIndex].done;
+        render();
+    }
+
     const addNewTask = (newTaskContent) => {
         tasks.push({content:newTaskContent});
         render();
