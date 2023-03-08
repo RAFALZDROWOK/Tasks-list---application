@@ -3,9 +3,11 @@
 ## Demo
 https://rafalzdrowok.github.io/Tasks-list---application/
 ## Description
-The purpose of creating the currency-converter was:
+The purpose of creating the Tasks-list-application was:
 - implementation of the Grid property in CSS
 - implementation of the Media queries property in CSS
+- using arrow functions, arrays and elements property in JavaScript
+- writing code in JavaScript enabling rendering of selected content in HTML
 ## Technologies:
 - HTML✔
 - CSS✔
