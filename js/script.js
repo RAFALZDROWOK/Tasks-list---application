@@ -47,32 +47,12 @@
     };
 
     const render = () => {
-        let taskListHTMLContent = "";
-
-        for (const task of tasks) {
-            taskListHTMLContent += `
-        <li class="tasks__item js-task">
-
-            <button class="tasks__button tasks__button--toggleDone js-toogleDone">
-              ${task.done ? "✔" : ""}
-            </button>
-
-            <span class="tasks__content${ task.done ? " tasks__content--done" : ""}">
-              ${task.content}
-            </span>
-
-            <button class="tasks__button tasks__button--remove js-remove">
-              🗑
-            </button>
-
-        </li>
-        `;
-        } 
-
-        document.querySelector(".js-tasks").innerHTML = taskListHTMLContent;
-
+        renderTasks()
         bindRemoveEvents();
         bindToggleDoneEvents();
+
+        renderButtons();
+        bindButtonsEvents();
     };
 
     const onFormSubmit = (event) => {
