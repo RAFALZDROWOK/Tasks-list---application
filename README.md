@@ -18,3 +18,5 @@ The purpose of creating the Tasks-list-application was:
 - Flex✔
 - Grid✔
 - Media queries✔
+- Immutability✔
+- Arrays✔
