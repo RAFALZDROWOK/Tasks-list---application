@@ -27,17 +27,17 @@
         render();
     }
 
-    const toggleHideDoneTasks = () => {
-        hideDoneTasks = !hideDoneTasks;
-        render();
-    };
-
     const markAllTasksDone = () => {
         tasks = tasks.map((task) => ({ 
             ...task, 
             done: true,
         }));
         
+        render();
+    };
+
+    const toggleHideDoneTasks = () => {
+        hideDoneTasks = !hideDoneTasks;
         render();
     };
 
