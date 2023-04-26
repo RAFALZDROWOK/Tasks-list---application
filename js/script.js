@@ -15,13 +15,14 @@
            { ...tasks[taskIndex], done: !tasks[taskIndex].done, },
            ...tasks.slice(taskIndex + 1),
         ];
-        
-        
         render();
     }
 
     const addNewTask = (newTaskContent) => {
-        tasks.push({content:newTaskContent});
+        tasks = [
+            ...tasks,
+            { content: newTaskContent },
+        ];
         render();
     }
 
