@@ -19,6 +19,7 @@
     width: 30px;
     height: 30px;
     padding: 0;
+    transition: background 0.3s;
 }
 
 .tasks__button--toggleDone {
@@ -31,6 +32,10 @@
 
 .tasks__button--toggleDone:active {
     background: hsl(120, 61%, 41%);
+}
+
+.tasks__item--hidden {
+    display: none;
 }
 
 .tasks__content--done {
