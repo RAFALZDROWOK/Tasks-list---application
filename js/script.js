@@ -47,7 +47,7 @@
         removeButtons.forEach((removeButton, taskIndex) => {
             removeButton.addEventListener("click", () => {
                 removeTask(taskIndex);
-            });
+            });hideDoneTasks
         });
     };
 
